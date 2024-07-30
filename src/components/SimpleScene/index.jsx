@@ -1,10 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import * as THREE from 'three';
 
-function FirstScene() {
+function SimpleScene() {
     const canvasRef = React.useRef(null);
 
-    useEffect(() => {
+    React.useEffect(() => {
         // Scene
         const scene = new THREE.Scene();
 
@@ -39,10 +39,11 @@ function FirstScene() {
 
 
     return (
-        <>
+        <div>
+            <span>SimpleScene</span>
             <canvas ref={canvasRef} />
-        </>
+        </div>
     );
 };
 
-export default FirstScene;
+export default SimpleScene;

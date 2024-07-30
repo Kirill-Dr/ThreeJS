@@ -1,12 +1,14 @@
 import React from 'react';
 import "./App.css";
-import FirstScene from "./components/FirstScene/index.jsx";
+import SimpleScene from "./components/SimpleScene/index.jsx";
+import TransformScene from "./components/TransformScene/index.jsx";
 
 function App() {
   return (
     <section className="mainSection">
         Three js
-        <FirstScene />
+        <SimpleScene />
+        <TransformScene />
     </section>
   )
 }
