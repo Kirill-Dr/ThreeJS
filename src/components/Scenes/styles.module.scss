@@ -1,0 +1,17 @@
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__canvas {
+    border-radius: 10px;
+    border: 1px dashed red;
+  }
+}

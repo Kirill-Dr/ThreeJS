@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from "../styles.module.scss";
 import * as THREE from 'three';
 
 function SimpleScene() {
@@ -39,10 +40,12 @@ function SimpleScene() {
 
 
     return (
-        <div>
-            <span>SimpleScene</span>
-            <canvas ref={canvasRef} />
-        </div>
+        <section className={styles.mainSection}>
+            <div className={styles.mainSection__title}>
+                <span>Simple Scene</span>
+            </div>
+            <canvas className={styles.mainSection__canvas} ref={canvasRef} />
+        </section>
     );
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from "../styles.module.scss";
 import * as THREE from 'three';
 
 function TransformScene() {
@@ -17,7 +18,7 @@ function TransformScene() {
         mesh.position.set(-0.5, -0.8, 0.5);
 
         // Scaling
-        mesh.scale.set(0.5, 2, 0.7)
+        mesh.scale.set(0.5, 2, 0.7);
 
         const sizes = {
             width: 600,
@@ -51,10 +52,12 @@ function TransformScene() {
 
 
     return (
-        <div>
-            <span>TransformScene</span>
-            <canvas ref={canvasRef}/>
-        </div>
+        <section className={styles.mainSection}>
+            <div className={styles.mainSection__title}>
+                <span>Transform Scene</span>
+            </div>
+            <canvas className={styles.mainSection__canvas} ref={canvasRef}/>
+        </section>
     );
 };
 

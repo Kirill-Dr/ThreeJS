@@ -1,15 +1,19 @@
 import React from 'react';
-import "./App.css";
-import SimpleScene from "./components/SimpleScene/index.jsx";
-import TransformScene from "./components/TransformScene/index.jsx";
+import styles from "./App.module.scss";
+import SimpleScene from "./components/Scenes/SimpleScene/index.jsx";
+import TransformScene from "./components/Scenes/TransformScene/index.jsx";
+import GroupScene from "./components/Scenes/GroupScene/index.jsx";
 
 function App() {
   return (
-    <section className="mainSection">
-        Three js
+    <main className={styles.main}>
+        <div className={styles.main__title}>
+            <h1>Three js</h1>
+        </div>
         <SimpleScene />
         <TransformScene />
-    </section>
+        <GroupScene />
+    </main>
   )
 }
 
